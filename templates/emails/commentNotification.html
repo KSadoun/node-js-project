@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Comment Notification</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { margin: 0; font-size: 24px; font-weight: 600; }
+        .content { padding: 30px 20px; }
+        .commenter { font-weight: 600; color: #667eea; }
+        .post-title { font-size: 14px; color: #666; margin: 10px 0; }
+        .comment-box { background-color: #f8f9fa; border-left: 4px solid #667eea; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        .comment-text { color: #555; font-size: 15px; margin: 0; }
+        .footer { background-color: #f9f9f9; padding: 20px; text-align: center; font-size: 12px; color: #666; border-top: 1px solid #e0e0e0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>New Comment on Your Post</h1>
+        </div>
+        <div class="content">
+            <p><span class="commenter">${commenter}</span> commented on your post:</p>
+            <div class="post-title"><strong>Post:</strong> ${post}</div>
+            <div class="comment-box">
+                <p class="comment-text">${comment}</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2026 Our App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
